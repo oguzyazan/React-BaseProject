@@ -19,9 +19,9 @@ root.render(
       <BrowserRouter>
         <Routes>
           <Route element={<Auth />}>
-            <Route path="/Auth/Login" exact element={<Login />} />
-            <Route path="/Auth/Register" exact element={<Register />} />
-            <Route path="*" element={<Navigate to="/Auth/Login" replace />} />
+            <Route path="/auth/login" exact element={<Login />} />
+            <Route path="/auth/register" exact element={<Register />} />
+            <Route path="*" element={<Navigate to="/auth/login" replace />} />
           </Route>
         </Routes>
       </BrowserRouter>
